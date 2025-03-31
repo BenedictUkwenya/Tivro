@@ -19,6 +19,7 @@ import OurGoalSection from './OurGoal';
 import CoreValuesSection from './CoreValues';
 import AreYouReady from './AreYouReady';
 import TivroFooter from '../components/Footer';
+import logo from "../assets/logo_converted.png"
 
 // Navigation links
 const Links = [
@@ -61,7 +62,7 @@ const AboutUsPage = () => {
           />
           
           <Box flex="1" display="flex" justifyContent="flex-start">
-            <Image src="src/assets/logo_converted.png" alt="Tivro Logo" maxW="100px" />
+            <Image src={logo} alt="Tivro Logo" maxW="100px" />
           </Box>
           
           {/* Navigation - Center */}

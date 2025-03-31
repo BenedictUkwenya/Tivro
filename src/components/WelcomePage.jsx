@@ -16,6 +16,7 @@ import {
 import TestimonialsSection from './Testimonials';
 import FaqSection from './FAQSection';
 import Footer from './Footer';
+import logo from "../assets/logo_converted.png"
 
 const NavigationBar = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const NavigationBar = () => {
     <Flex py={4} align="center" width="100%">
       <Box>
         <Heading as="h1" size="md" color="orange.500">
-           <Image src="src/assets/logo_converted.png" alt="Tivro Logo" maxW="100px" />
+           <Image src={logo} alt="Tivro Logo" maxW="100px" />
         </Heading>
       </Box>
       

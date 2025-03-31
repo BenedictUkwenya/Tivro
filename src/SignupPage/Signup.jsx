@@ -18,7 +18,8 @@ import {
 } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { color } from 'framer-motion';
-
+import logo from "../assets/logo_converted.png"
+import bgimg from "../assets/image.png"
 const SignupPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -35,7 +36,7 @@ const SignupPage = () => {
       >
         {/* Logo */}
         <Box mb={8}>
-          <Image src="src/assets/logo_converted.png" alt="Tivro Logo" maxW="100px" />
+          <Image src={logo} alt="Tivro Logo" maxW="100px" />
         </Box>
         
         {/* Heading */}
@@ -161,7 +162,7 @@ const SignupPage = () => {
       <Box 
         w={{ base: "0%", md: "50%" }} 
         display={{ base: "none", md: "block" }}
-        bgImage="url('src/assets/image.png')"
+        bgImage={`url(${bgimg})`}
         bgSize="cover"
         bgPosition="center"
       />
