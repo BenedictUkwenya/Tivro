@@ -81,6 +81,7 @@ const HeroSection = () => {
             mb={4} 
             lineHeight="1.2"
             maxW="container.md"
+            color="white"
           >
             Building Trust Between Landlords and Tenants in{" "}
             <Text as="span" color="orange.500" fontStyle="italic">
