@@ -141,7 +141,7 @@ const OurGoalSection = () => {
               boxShadow="lg"
             >
               <Image
-                src="/path-to-handshake-image.jpg" // Replace with your actual image path
+                src="/"
                 alt="Landlord and tenant handshake"
                 w="full"
                 h="auto"

@@ -49,7 +49,7 @@ const AboutUsSection = () => {
               zIndex={2}
             >
               <Image
-                src="/path-to-your-image.jpg" // Replace with your actual image path
+                src="/" 
                 alt="Person using Tivro Africa services"
                 w="full"
                 h="auto"
