@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import FAQAccordion from './FAQAccordings';
 import TivroFooter from '../components/Footer';
-
+import { NavLink } from "react-router-dom";
 const FAQPage = () => {
   const [activeTab, setActiveTab] = useState('general');
   
@@ -43,11 +43,11 @@ const FAQPage = () => {
           justify="center"
           ml="4rem"
         >
-          <Link href="/home">Home</Link>
-          <Link href="/about">About Tivro</Link>
-          <Link href="/partners">Tivro Partners</Link>
-          <Link href="/ai">Tivro AI</Link>
-          <Link href="/contact-us">Contact Us</Link>
+          <NavLink href="/home">Home</NavLink>
+          <NavLink href="/about">About Tivro</NavLink>
+          <NavLink href="/partners">Tivro Partners</NavLink>
+          <NavLink href="/ai">Tivro AI</NavLink>
+          <NavLink href="/contact-us">Contact Us</NavLink>
         </HStack>
         
         <HStack spacing={4}>
@@ -97,7 +97,7 @@ const FAQPage = () => {
             <Heading size="xl" mb={4}>Frequently Asked Questions</Heading>
             <Text fontSize="md" maxW="800px">
               Check our FAQ below if you have any unanswered questions and if you can't
-              find the answer, reach out to us at <Link href="mailto:info@tivro.mail.com" color="#FF4500" fontWeight="bold">info@tivro.mail.com</Link>.
+              find the answer, reach out to us at <NavLink href="mailto:info@tivro.mail.com" color="#FF4500" fontWeight="bold">info@tivro.mail.com</NavLink>.
             </Text>
             
             <Flex mt={10}>

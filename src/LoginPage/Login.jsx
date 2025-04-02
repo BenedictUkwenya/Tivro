@@ -15,8 +15,8 @@ import {
   Checkbox,
 } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
-import logo from "../assets/logo_converted.png"
 import bgimg from "../assets/image.png"
+import { NavLink } from 'react-router-dom';
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   
@@ -31,7 +31,7 @@ const LoginPage = () => {
         justifyContent="center"
       >
         <Box mb={16} ml={2}>
-        <Link href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></Link>
+        <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
         </Box>
         
         {/* Heading */}
@@ -82,9 +82,9 @@ const LoginPage = () => {
           {/* Remember me and Forgot password */}
           <Flex justify="space-between" align="center" mb={6}>
             <Checkbox defaultChecked colorScheme="orange" color="black">Remember me</Checkbox>
-            <Link color="black" href="/forgot-password">
+            <NavLink color="black" href="/forgot-password">
               Forgot your password?
-            </Link>
+            </NavLink>
           </Flex>
           
           {/* Sign In Button */}
@@ -102,7 +102,7 @@ const LoginPage = () => {
           
           {/* Don't have account */}
           <Text textAlign="center" color="black">
-            Don't have an account? <Link color="black" href="/signup">Sign up</Link>
+            Don't have an account? <NavLink color="black" href="/signup">Sign up</NavLink>
           </Text>
         </Box>
       </Box>

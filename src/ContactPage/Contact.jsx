@@ -18,6 +18,7 @@ import {
 import FaqSection from '../components/FAQSection';
 import TivroFooter from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 const ContactUsPage = () => {
   const navigate = useNavigate()
   return (
@@ -35,15 +36,15 @@ const ContactUsPage = () => {
         borderColor="gray.200"
       >
         <Box>
-         <Link href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></Link>
+         <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
         </Box>
         
         <HStack spacing={6} display={{ base: 'none', md: 'flex' }}>
-          <Link href='/'>Home</Link>
-          <Link href='/about'>About Tivro</Link>
-          <Link href='#'>Tivro Partners</Link>
-          <Link href='/ai'>Tivro AI</Link>
-          <Link fontWeight="bold" href='/contact'>Contact Us</Link>
+          <NavLink href='/'>Home</NavLink>
+          <NavLink href='/about'>About Tivro</NavLink>
+          <NavLink href='#'>Tivro Partners</NavLink>
+          <NavLink href='/ai'>Tivro AI</NavLink>
+          <NavLink fontWeight="bold" href='/contact'>Contact Us</NavLink>
         </HStack>
         
         <HStack spacing={4}>

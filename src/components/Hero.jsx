@@ -6,10 +6,11 @@ import {
   Flex,
   Heading,
   HStack,
-  Link,
+  NavLink,
   Text,
   VStack,
 } from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
 
 const NavigationBar = () => {
   return (
@@ -21,20 +22,20 @@ const NavigationBar = () => {
         </Heading>
       </Box>
       
-      {/* Navigation links centered */}
+      {/* Navigation NavLinks centered */}
       <Flex justify="center" flex={1}>
         <HStack spacing={6}>
-          <Link>Solutions</Link>
-          <Link>Tivro AI</Link>
-          <Link>Tivro Partners</Link>
-          <Link>About Tivro</Link>
-          <Link>Contact Us</Link>
+          <NavLink>Solutions</NavLink>
+          <NavLink>Tivro AI</NavLink>
+          <NavLink>Tivro Partners</NavLink>
+          <NavLink>About Tivro</NavLink>
+          <NavLink>Contact Us</NavLink>
         </HStack>
       </Flex>
       
       {/* Auth buttons on the right */}
       <HStack spacing={4}>
-        <Link>Login</Link>
+        <NavLink>Login</NavLink>
         <Button colorScheme="orange" rounded="md">
           Get Started
         </Button>

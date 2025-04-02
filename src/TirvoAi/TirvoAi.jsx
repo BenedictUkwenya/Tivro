@@ -10,9 +10,10 @@ import {
   Image,
   Badge,
   HStack,
-  Link,
+  NavLink,
   useColorModeValue
 } from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
 
 const TirvoAi = () => {
   const bgOverlay = 'rgba(0, 0, 0, 0.65)';
@@ -63,11 +64,11 @@ const TirvoAi = () => {
         {/* Logo */}
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing="tight">
-          <Link href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></Link>
+          <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
           </Heading>
         </Flex>
 
-        {/* Navigation Links - Center */}
+        {/* Navigation NavLinks - Center */}
         <HStack
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
@@ -76,24 +77,24 @@ const TirvoAi = () => {
           spacing={8}
           justifyContent="center"
         >
-          <Link href="/" color="white" fontWeight="medium">
+          <NavLink href="/" color="white" fontWeight="medium">
             Home
-          </Link>
-          <Link href="/about" color="white" fontWeight="medium">
+          </NavLink>
+          <NavLink href="/about" color="white" fontWeight="medium">
             About Tivro
-          </Link>
-          <Link href="/careers" color="white" fontWeight="medium">
+          </NavLink>
+          <NavLink href="/careers" color="white" fontWeight="medium">
             Careers
-          </Link>
-          <Link href="#" color="white" fontWeight="medium">
+          </NavLink>
+          <NavLink href="#" color="white" fontWeight="medium">
             Tivro Partners
-          </Link>
-          <Link href="/" color="white" fontWeight="medium">
+          </NavLink>
+          <NavLink href="/" color="white" fontWeight="medium">
             Tivro AI
-          </Link>
-          <Link href="/contact" color="white" fontWeight="medium">
+          </NavLink>
+          <NavLink href="/contact" color="white" fontWeight="medium">
             Contact Us
-          </Link>
+          </NavLink>
         </HStack>
 
         {/* Right side buttons */}

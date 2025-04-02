@@ -17,7 +17,7 @@ import BecomeApart from './BecomeApart';
 import FaqSection from '../components/FAQSection';
 import TivroFooter from '../components/Footer';
 import { useNavigate } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 const CareersPage = () => {
   const navigate = useNavigate();
   return (
@@ -62,17 +62,17 @@ const CareersPage = () => {
           >
             {/* Logo */}
             <Flex align="center">
-            <Link href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></Link>
+            <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
             </Flex>
             
             {/* Navigation Links */}
             <HStack spacing={6} display={{ base: 'none', md: 'flex' }}>
-              <Link color="white" href="/">Home</Link>
-              <Link color="white" href="/about">About Tivro</Link>
-              <Link color="white" href="/careers">Careers</Link>
-              <Link color="white" href="#">Tivro Partners</Link>
-              <Link color="white" href="/ai">Tivro AI</Link>
-              <Link color="white" href="/contact">Contact Us</Link>
+              <NavLink color="white" href="/">Home</NavLink>
+              <NavLink color="white" href="/about">About Tivro</NavLink>
+              <NavLink color="white" href="/careers">Careers</NavLink>
+              <NavLink color="white" href="#">Tivro Partners</NavLink>
+              <NavLink color="white" href="/ai">Tivro AI</NavLink>
+              <NavLink color="white" href="/contact">Contact Us</NavLink>
             </HStack>
             
             {/* Login and Get Started Buttons */}

@@ -18,7 +18,7 @@ import {
 } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { color } from 'framer-motion';
-import logo from "../assets/logo_converted.png"
+import { NavLink } from 'react-router-dom';
 import bgimg from "../assets/image.png"
 const SignupPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -36,7 +36,7 @@ const SignupPage = () => {
       >
         {/* Logo */}
         <Box mb={8}>
-          <Link href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></Link>
+          <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
         </Box>
         
         {/* Heading */}
@@ -137,7 +137,7 @@ const SignupPage = () => {
           
           {/* Terms and Conditions */}
           <Checkbox defaultChecked color="black">
-            I agree to the <Link color="orange.500">Terms of Service</Link> and <Link color="orange.500">Privacy Policy</Link>
+            I agree to the <NavLink color="orange.500">Terms of Service</NavLink> and <NavLink color="orange.500">Privacy Policy</NavLink>
           </Checkbox>
           
           {/* Signup Button */}
@@ -154,7 +154,7 @@ const SignupPage = () => {
           
           {/* Already have account */}
           <Text mt={4} textAlign="center" color="black">
-            Already have an account? <Link color="orange.500" href="/login">Sign in</Link>
+            Already have an account? <NavLink color="orange.500" href="/login">Sign in</NavLink>
           </Text>
         </VStack>
       </Box>
