@@ -1,6 +1,7 @@
 import React from 'react';
 import FeaturesSection from './FeaturesSection';
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import {
   Box,
@@ -29,12 +30,12 @@ const NavigationBar = () => {
       
       <Flex justify="center" flex={1} color="white" zIndex={2}>
         <HStack spacing={6}>
-          <Link>Solutions</Link>
-          <Link href='/ai'>Tivro AI</Link>
-          <Link>Tivro Partners</Link>
-          <Link href='/careers'>Career</Link>
-          <Link href='/about'>About Tivro</Link>
-          <Link href="/contact">Contact Us</Link>
+          <NavLink>Solutions</NavLink>
+          <NavLink to='/ai'>Tivro AI</NavLink>
+          <NavLink>Tivro Partners</NavLink>
+          <NavLink to='/careers'>Career</NavLink>
+          <NavLink to='/about'>About Tivro</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
         </HStack>
       </Flex>
       
