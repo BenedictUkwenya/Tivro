@@ -43,11 +43,11 @@ const FAQPage = () => {
           justify="center"
           ml="4rem"
         >
-          <NavLink href="/home">Home</NavLink>
-          <NavLink href="/about">About Tivro</NavLink>
-          <NavLink href="/partners">Tivro Partners</NavLink>
-          <NavLink href="/ai">Tivro AI</NavLink>
-          <NavLink href="/contact-us">Contact Us</NavLink>
+          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/about">About Tivro</NavLink>
+          <NavLink to="/partners">Tivro Partners</NavLink>
+          <NavLink to="/ai">Tivro AI</NavLink>
+          <NavLink to="/contact-us">Contact Us</NavLink>
         </HStack>
         
         <HStack spacing={4}>
@@ -97,7 +97,7 @@ const FAQPage = () => {
             <Heading size="xl" mb={4}>Frequently Asked Questions</Heading>
             <Text fontSize="md" maxW="800px">
               Check our FAQ below if you have any unanswered questions and if you can't
-              find the answer, reach out to us at <NavLink href="mailto:info@tivro.mail.com" color="#FF4500" fontWeight="bold">info@tivro.mail.com</NavLink>.
+              find the answer, reach out to us at <NavLink to="mailto:info@tivro.mail.com" color="#FF4500" fontWeight="bold">info@tivro.mail.com</NavLink>.
             </Text>
             
             <Flex mt={10}>

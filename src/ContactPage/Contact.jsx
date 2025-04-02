@@ -36,15 +36,15 @@ const ContactUsPage = () => {
         borderColor="gray.200"
       >
         <Box>
-         <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
+         <NavLink to='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
         </Box>
         
         <HStack spacing={6} display={{ base: 'none', md: 'flex' }}>
-          <NavLink href='/'>Home</NavLink>
-          <NavLink href='/about'>About Tivro</NavLink>
-          <NavLink href='#'>Tivro Partners</NavLink>
-          <NavLink href='/ai'>Tivro AI</NavLink>
-          <NavLink fontWeight="bold" href='/contact'>Contact Us</NavLink>
+          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/about'>About Tivro</NavLink>
+          <NavLink to='#'>Tivro Partners</NavLink>
+          <NavLink to='/ai'>Tivro AI</NavLink>
+          <NavLink fontWeight="bold" to='/contact'>Contact Us</NavLink>
         </HStack>
         
         <HStack spacing={4}>

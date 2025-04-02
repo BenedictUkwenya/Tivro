@@ -63,7 +63,7 @@ const TirvoAi = () => {
         {/* Logo */}
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing="tight">
-          <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
+          <NavLink to='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
           </Heading>
         </Flex>
 
@@ -76,22 +76,22 @@ const TirvoAi = () => {
           spacing={8}
           justifyContent="center"
         >
-          <NavLink href="/" color="white" fontWeight="medium">
+          <NavLink to="/" color="white" fontWeight="medium">
             Home
           </NavLink>
-          <NavLink href="/about" color="white" fontWeight="medium">
+          <NavLink to="/about" color="white" fontWeight="medium">
             About Tivro
           </NavLink>
-          <NavLink href="/careers" color="white" fontWeight="medium">
+          <NavLink to="/careers" color="white" fontWeight="medium">
             Careers
           </NavLink>
-          <NavLink href="#" color="white" fontWeight="medium">
+          <NavLink to="#" color="white" fontWeight="medium">
             Tivro Partners
           </NavLink>
-          <NavLink href="/" color="white" fontWeight="medium">
+          <NavLink to="/" color="white" fontWeight="medium">
             Tivro AI
           </NavLink>
-          <NavLink href="/contact" color="white" fontWeight="medium">
+          <NavLink to="/contact" color="white" fontWeight="medium">
             Contact Us
           </NavLink>
         </HStack>

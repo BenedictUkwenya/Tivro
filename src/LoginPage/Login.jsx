@@ -31,7 +31,7 @@ const LoginPage = () => {
         justifyContent="center"
       >
         <Box mb={16} ml={2}>
-        <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
+        <NavLink to='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
         </Box>
         
         {/* Heading */}
@@ -82,7 +82,7 @@ const LoginPage = () => {
           {/* Remember me and Forgot password */}
           <Flex justify="space-between" align="center" mb={6}>
             <Checkbox defaultChecked colorScheme="orange" color="black">Remember me</Checkbox>
-            <NavLink color="black" href="/forgot-password">
+            <NavLink color="black" to="/forgot-password">
               Forgot your password?
             </NavLink>
           </Flex>
@@ -102,7 +102,7 @@ const LoginPage = () => {
           
           {/* Don't have account */}
           <Text textAlign="center" color="black">
-            Don't have an account? <NavLink color="black" href="/signup">Sign up</NavLink>
+            Don't have an account? <NavLink color="black" to="/signup">Sign up</NavLink>
           </Text>
         </Box>
       </Box>

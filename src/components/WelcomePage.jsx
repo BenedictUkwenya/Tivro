@@ -24,7 +24,7 @@ const NavigationBar = () => {
     <Flex py={4} align="center" width="100%">
       <Box>
         <Heading as="h1" size="md" color="orange.500">
-           <Link href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></Link>
+           <Link to='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></Link>
         </Heading>
       </Box>
       
@@ -40,7 +40,7 @@ const NavigationBar = () => {
       </Flex>
       
       <HStack spacing={4}>
-        <Link  href="/login" color="white">Login</Link>
+        <Link  to="/login" color="white">Login</Link>
         <Button colorScheme="red" rounded="md" onClick={() => navigate("/signup")}>
       Get Started
     </Button>

@@ -62,17 +62,17 @@ const CareersPage = () => {
           >
             {/* Logo */}
             <Flex align="center">
-            <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
+            <NavLink to='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
             </Flex>
             
             {/* Navigation Links */}
             <HStack spacing={6} display={{ base: 'none', md: 'flex' }}>
-              <NavLink color="white" href="/">Home</NavLink>
-              <NavLink color="white" href="/about">About Tivro</NavLink>
-              <NavLink color="white" href="/careers">Careers</NavLink>
-              <NavLink color="white" href="#">Tivro Partners</NavLink>
-              <NavLink color="white" href="/ai">Tivro AI</NavLink>
-              <NavLink color="white" href="/contact">Contact Us</NavLink>
+              <NavLink color="white" to="/">Home</NavLink>
+              <NavLink color="white" to="/about">About Tivro</NavLink>
+              <NavLink color="white" to="/careers">Careers</NavLink>
+              <NavLink color="white" to="#">Tivro Partners</NavLink>
+              <NavLink color="white" to="/ai">Tivro AI</NavLink>
+              <NavLink color="white" to="/contact">Contact Us</NavLink>
             </HStack>
             
             {/* Login and Get Started Buttons */}

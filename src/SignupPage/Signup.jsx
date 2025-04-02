@@ -36,7 +36,7 @@ const SignupPage = () => {
       >
         {/* Logo */}
         <Box mb={8}>
-          <NavLink href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
+          <NavLink to='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
         </Box>
         
         {/* Heading */}
@@ -154,7 +154,7 @@ const SignupPage = () => {
           
           {/* Already have account */}
           <Text mt={4} textAlign="center" color="black">
-            Already have an account? <NavLink color="orange.500" href="/login">Sign in</NavLink>
+            Already have an account? <NavLink color="orange.500" to="/login">Sign in</NavLink>
           </Text>
         </VStack>
       </Box>
