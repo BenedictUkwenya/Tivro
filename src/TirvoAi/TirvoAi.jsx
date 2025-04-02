@@ -10,7 +10,6 @@ import {
   Image,
   Badge,
   HStack,
-  NavLink,
   useColorModeValue
 } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
