@@ -13,10 +13,10 @@ import {
 } from '@chakra-ui/react';
 import FAQAccordion from './FAQAccordings';
 import TivroFooter from '../components/Footer';
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const FAQPage = () => {
   const [activeTab, setActiveTab] = useState('general');
-  
+  const navigate = useNavigate();
   return (
     <Box width="100%">
       {/* Navigation Bar */}
@@ -33,7 +33,7 @@ const FAQPage = () => {
         borderColor="gray.200"
       >
         <Flex align="center">
-          <Text fontSize="xl" fontWeight="bold" color="#FF4500">Tivro</Text>
+          <NavLink to='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
         </Flex>
         
         <HStack 
@@ -51,13 +51,14 @@ const FAQPage = () => {
         </HStack>
         
         <HStack spacing={4}>
-          <Button variant="ghost" size="sm">Login</Button>
+          <Button variant="ghost" size="sm" onClick={()=>navigate("/login")}>Login</Button>
           <Button 
             bg="#FF4500" 
             color="white" 
             size="sm" 
             _hover={{ bg: "#E03E00" }}
             borderRadius="md"
+            onClick={()=>navigate("/signup")}
           >
             Get Started
           </Button>

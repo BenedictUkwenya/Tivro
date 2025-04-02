@@ -42,7 +42,7 @@ const ContactUsPage = () => {
         <HStack spacing={6} display={{ base: 'none', md: 'flex' }}>
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/about'>About Tivro</NavLink>
-          <NavLink to='#'>Tivro Partners</NavLink>
+          <NavLink to='partners'>Tivro Partners</NavLink>
           <NavLink to='/ai'>Tivro AI</NavLink>
           <NavLink fontWeight="bold" to='/contact'>Contact Us</NavLink>
         </HStack>

@@ -12,12 +12,17 @@ import {
   HStack,
   useColorModeValue
 } from '@chakra-ui/react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import TivroAIFeatures from './AiFeatures';
+import TivroAIAssistant from './TirvoAiAssistant';
+import FaqSection from '../components/FAQSection';
+import TivroAISignup from './Tirvosignup';
+import TivroFooter from '../components/Footer';
 
 const TirvoAi = () => {
   const bgOverlay = 'rgba(0, 0, 0, 0.65)';
   const primaryColor = '#FF5722'; // Orange color used in the design
-
+  const navigate = useNavigate()
   return (
     <Box position="relative" minH="100vh">
       {/* Background Image with Overlay */}
@@ -85,10 +90,10 @@ const TirvoAi = () => {
           <NavLink to="/careers" color="white" fontWeight="medium">
             Careers
           </NavLink>
-          <NavLink to="#" color="white" fontWeight="medium">
+          <NavLink to="/partners" color="white" fontWeight="medium">
             Tivro Partners
           </NavLink>
-          <NavLink to="/" color="white" fontWeight="medium">
+          <NavLink to="/ai" color="white" fontWeight="medium">
             Tivro AI
           </NavLink>
           <NavLink to="/contact" color="white" fontWeight="medium">
@@ -102,6 +107,7 @@ const TirvoAi = () => {
             variant="ghost"
             color="white"
             _hover={{ bg: 'whiteAlpha.200' }}
+            onClick={()=> navigate("/login")}
           >
             Login
           </Button>
@@ -111,6 +117,7 @@ const TirvoAi = () => {
             _hover={{ bg: 'orange.600' }}
             borderRadius="md"
             px={6}
+            onClick={()=> navigate("/signup")}
           >
             Get Started
           </Button>
@@ -190,6 +197,11 @@ const TirvoAi = () => {
           </Button>
         </Flex>
       </Container>
+      <TivroAIFeatures />
+      <TivroAIAssistant />
+      <FaqSection />
+      <TivroAISignup />
+      <TivroFooter />
     </Box>
   );
 };

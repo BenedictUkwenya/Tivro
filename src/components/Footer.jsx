@@ -5,6 +5,7 @@ import {
   Flex, 
   Text, 
   HStack, 
+  Image,
   VStack, 
   Link, 
   Icon,
@@ -21,8 +22,7 @@ const TivroFooter = () => {
           {/* Logo and Description */}
           <VStack align="flex-start" spacing={4}>
             <Flex align="center">
-              <Box color="orange.500" fontWeight="bold" fontSize="2xl">T</Box>
-              <Text fontSize="2xl" fontWeight="bold">ivro</Text>
+              <NavLink to='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></NavLink>
             </Flex>
             <Text fontSize="sm">
               Tivro bridges the gap between landlords and tenants with seamless 
@@ -35,10 +35,10 @@ const TivroFooter = () => {
           <VStack align="flex-start" spacing={4}>
             <Text fontWeight="bold" fontSize="lg">Pages</Text>
             <VStack align="flex-start" spacing={2}>
-              <NavLink to="#">Home</NavLink>
-              <NavLink to="#">About Us</NavLink>
-              <NavLink to="#">Career</NavLink>
-              <NavLink to="#">Contact Us</NavLink>
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/about">About Us</NavLink>
+              <NavLink to="/careers">Career</NavLink>
+              <NavLink to="/contant">Contact Us</NavLink>
             </VStack>
           </VStack>
 
@@ -46,7 +46,7 @@ const TivroFooter = () => {
           <VStack align="flex-start" spacing={4}>
             <Text fontWeight="bold" fontSize="lg">Product</Text>
             <VStack align="flex-start" spacing={2}>
-              <NavLink to="#">Tivro AI</NavLink>
+              <NavLink to="/ai">Tivro AI</NavLink>
               <NavLink to="#">CityVJ</NavLink>
             </VStack>
           </VStack>
@@ -57,7 +57,7 @@ const TivroFooter = () => {
             <VStack align="flex-start" spacing={2}>
               <NavLink to="#">Privacy</NavLink>
               <NavLink to="#">GDPR</NavLink>
-              <NavLink to="#">Terms and Conditions</NavLink>
+              <NavLink to="/terms">Terms and Conditions</NavLink>
               <NavLink to="#">Cookies</NavLink>
             </VStack>
           </VStack>

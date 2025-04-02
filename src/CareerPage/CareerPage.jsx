@@ -71,7 +71,7 @@ const CareersPage = () => {
               <NavLink color="white" to="/">Home</NavLink>
               <NavLink color="white" to="/about">About Tivro</NavLink>
               <NavLink color="white" to="/careers">Careers</NavLink>
-              <NavLink color="white" to="#">Tivro Partners</NavLink>
+              <NavLink color="white" to="/partners">Tivro Partners</NavLink>
               <NavLink color="white" to="/ai">Tivro AI</NavLink>
               <NavLink color="white" to="/contact">Contact Us</NavLink>
             </HStack>

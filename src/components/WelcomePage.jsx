@@ -32,7 +32,7 @@ const NavigationBar = () => {
         <HStack spacing={6}>
           <NavLink>Solutions</NavLink>
           <NavLink to='/ai'>Tivro AI</NavLink>
-          <NavLink>Tivro Partners</NavLink>
+          <NavLink to="/partners">Tivro Partners</NavLink>
           <NavLink to='/careers'>Career</NavLink>
           <NavLink to='/about'>About Tivro</NavLink>
           <NavLink to="/contact">Contact Us</NavLink>

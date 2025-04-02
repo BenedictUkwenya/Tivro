@@ -151,7 +151,7 @@ const AboutUsPage = () => {
           </Heading>
         </Box>
       </Box>
-      <Box py={20}>
+      <Box>
         <AboutUsSection />
         <OurJourneySection />
         <OurGoalSection />

@@ -62,7 +62,7 @@ const AboutUsSection = () => {
           <GridItem>
             <VStack spacing={6} align="flex-start">
               <Text 
-                color={accentColor} 
+                color="black" 
                 fontWeight="bold" 
                 textTransform="uppercase"
               >
