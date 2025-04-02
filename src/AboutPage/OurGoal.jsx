@@ -141,7 +141,7 @@ const OurGoalSection = () => {
               boxShadow="lg"
             >
               <Image
-                src="/"
+                src="/aboutimg3.jpeg"
                 alt="Landlord and tenant handshake"
                 w="full"
                 h="auto"

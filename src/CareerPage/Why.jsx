@@ -32,7 +32,7 @@ const PartnerSection = () => {
           bg="gray.100"
         >
           <Image
-            src="/path-to-team-image.jpg"
+            src="/career1.jpeg"
             alt="Tivro Partners Team"
             objectFit="cover"
             w="100%"

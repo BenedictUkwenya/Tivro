@@ -127,7 +127,7 @@ const AgentSection = () => {
           height={{ base: "200px", md: "300px" }}
         >
           <Image
-            src="/path-to-your-image.jpg"
+            src="/career2.jpeg"
             alt="Tivro Agents working together"
             width="100%"
             height="100%"

@@ -59,7 +59,7 @@ const OurJourneySection = () => {
               boxShadow="lg"
             >
               <Image
-                src="/path-to-team-image.jpg" // Replace with your actual image path
+                src="/aboutimg2.jpeg" // Replace with your actual image path
                 alt="Tivro Africa Team Collaboration"
                 w="full"
                 h="auto"

@@ -49,7 +49,7 @@ const AboutUsSection = () => {
               zIndex={2}
             >
               <Image
-                src="/" 
+                src="/aboutimg1.jpeg" 
                 alt="Person using Tivro Africa services"
                 w="full"
                 h="auto"

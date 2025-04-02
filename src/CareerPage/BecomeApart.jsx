@@ -59,7 +59,7 @@ const BecomeApart
             {/* Image Section */}
             <Box flex="1">
               <Image 
-                src="/path-to-your-image.jpg" 
+                src="/career3.jpeg" 
                 alt="Professionals shaking hands" 
                 borderRadius="md"
                 boxShadow="md"
@@ -77,9 +77,10 @@ const BecomeApart
         color="white" 
         py={10}
         px={4}
-        backgroundImage="url('/path-to-background-image.jpg')"
+        height="432px"
+        backgroundImage="url('/career4.jpeg')"
         backgroundSize="cover"
-        backgroundPosition="center"
+        bgPosition="center"
         position="relative"
       >
         {/* Dark overlay */}
