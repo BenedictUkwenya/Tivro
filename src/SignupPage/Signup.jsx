@@ -36,7 +36,7 @@ const SignupPage = () => {
       >
         {/* Logo */}
         <Box mb={8}>
-          <Image src={logo} alt="Tivro Logo" maxW="100px" />
+          <Link href='/'><Image src="/logo_converted.png" alt="Tivro Logo" maxW="100px" /></Link>
         </Box>
         
         {/* Heading */}

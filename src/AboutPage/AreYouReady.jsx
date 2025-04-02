@@ -4,6 +4,7 @@ import {
   Heading, 
   Text, 
   Button, 
+  Image,
   VStack, 
   Container, 
   Flex
@@ -25,13 +26,22 @@ const AreYouReady = () => {
           position="absolute"
           top="0"
           left="0"
+          bgPosition="center"
           width="100%"
           height="100%"
           zIndex="0"
-          bgColor="rgba(255, 255, 255, 0.8)" // Semi-transparent overlay
+            _after={{
+    content: '""',
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    bg: "rgba(0, 0, 0, 0.7)",
+    pointerEvents: "none",
+  }}
         >
-          {/* You would add the actual background image here */}
-          {/* For example: <Image src="/path/to/your-image.jpg" objectFit="cover" width="100%" height="100%" /> */}
+         <Image src="/readyimage.png" objectFit="cover" width="100%" height="50vh" />
         </Box>
 
         {/* Content overlay */}
@@ -41,7 +51,7 @@ const AreYouReady = () => {
             alignItems="center"
             justifyContent="center"
             textAlign="center"
-            height="100%"
+            height="50%"
             px={4}
           >
             <VStack spacing={6} maxW="800px">
@@ -50,11 +60,12 @@ const AreYouReady = () => {
                 size="2xl" 
                 fontWeight="bold"
                 lineHeight="1.2"
+                color="white"
               >
                 Are you ready to make smart decisions fast?
               </Heading>
               
-              <Text fontSize="xl" maxW="700px">
+              <Text fontSize="xl" maxW="700px" color="white">
                 Tivro bridges the gap between landlords and tenants with seamless verification and trusted
                 property inspection, ensuring secure and efficient rental process.
               </Text>

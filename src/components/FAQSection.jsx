@@ -1,6 +1,7 @@
 import { Box, Heading, Text, VStack, IconButton, Collapse, Button } from "@chakra-ui/react";
 import { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
 
 const faqs = [
   {
@@ -33,6 +34,7 @@ const FaqSection = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const navigate = useNavigate();
   return (
     <Box width="100%" bg="white">
     <Box textAlign="center" py={10} px={5} maxW="800px" mx="auto" bg="white">
@@ -61,7 +63,7 @@ const FaqSection = () => {
           </Box>
         ))}
       </VStack>
-      <Button colorScheme="red" mt={4} fontWeight="bold" variant="outline">See more</Button>
+      <Button colorScheme="red" mt={4} fontWeight="bold" variant="outline" onClick={()=>navigate("/faq")}>See more</Button>
     </Box>
     </Box>
   );

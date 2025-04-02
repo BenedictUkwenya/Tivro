@@ -116,14 +116,25 @@ const AboutUsPage = () => {
       </Box>
 
       {/* Hero Section with Background Image */}
-      <Box
-        w="100%"
-        h="80vh"
-        position="relative"
-        bgImage="url('/about-us-hero.jpg')"
-        bgSize="cover"
-        bgPosition="center"
-      >
+<Box 
+  position="relative"
+  width="100%"
+  height="90vh"
+  bgImage="url('/about.png')"
+  bgSize="cover"
+   bgPosition="top"
+  _before={{
+    content: '""',
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    bg: "linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.1))",
+    zIndex: 1,
+    pointerEvents: "none",
+  }}
+>
         <Box
           position="absolute"
           top="0"
